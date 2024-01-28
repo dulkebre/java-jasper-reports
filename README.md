@@ -10,8 +10,8 @@ This is just another JasperReport Hello World, created to illustrate reporting c
 
 To run this project you will need to install:
 
- - Java 17
- - Maven, version 3.9.4 or greater
+ - Java 17 or greater
+ - Maven version 3.9.4 or greater
  
 In case you would like to modify reports, be sure to download JasperSoft community report editor. Can try this link https://community.jaspersoft.com/files/file/41-jaspersoft-community-edition/
 
