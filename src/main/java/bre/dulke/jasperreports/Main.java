@@ -25,12 +25,12 @@ public class Main {
 		logger.info("Lets get busy!");
 		SimpleReportFiller simpleReportFiller = new SimpleReportFiller();
 
-		simpleReportFiller.setReportFileName("forestsDigitalReport.jrxml");
+		simpleReportFiller.setReportFileName("helloCarReport.jrxml");
 		simpleReportFiller.compileReport();
 
 		Map<String, Object> parameters = new HashMap<>();
 		parameters.put("title", "Sample Jasper Reports");
-		parameters.put("companyName", "Forests Digital");
+		parameters.put("companyName", "Hello Car");
 		parameters.put("clientName", "My first client");
 
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
@@ -51,10 +51,10 @@ public class Main {
 		SimpleReportExporter simpleExporter = new SimpleReportExporter();
 		simpleExporter.setJasperPrint(simpleReportFiller.getJasperPrint());
 
-		simpleExporter.exportToPdf(REPORT_ROOT + "forestsDigitalReport.pdf", "Author - Nikola");
-		simpleExporter.exportToXlsx(REPORT_ROOT + "forestsDigitalReport.xlsx", "Sheet - Test");
-		simpleExporter.exportToCsv(REPORT_ROOT + "forestsDigitalReport.csv");
-		simpleExporter.exportToHtml(REPORT_ROOT + "forestsDigitalReport.html");
+		simpleExporter.exportToPdf(REPORT_ROOT + "helloCarReport.pdf", "Author - Nikola");
+		simpleExporter.exportToXlsx(REPORT_ROOT + "helloCarReport.xlsx", "Sheet - Test");
+		simpleExporter.exportToCsv(REPORT_ROOT + "helloCarReport.csv");
+		simpleExporter.exportToHtml(REPORT_ROOT + "helloCarReport.html");
 
 		logger.info("Voila - reports have been created");
 
