@@ -23,10 +23,10 @@ Many options are available from your IDE, while from console you can use this co
 
 On the first run it may take longer to download all dependencies... in the end it will create a few report files in project root:
 
- - savaDeckReport.csv
- - savaDeckReport.html
- - savaDeckReport.pdf
- - savaDeckReport.xlsx
+ - helloCarReport.csv
+ - helloCarReport.html
+ - helloCarReport.pdf
+ - helloCarReport.xlsx
  
 # How to customize
 
